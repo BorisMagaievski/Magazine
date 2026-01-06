@@ -1,17 +1,56 @@
 BAM - Ctba 06/01/2025
 ----------------
-Criar conta
-criar repositorio no github
+
+Criar uma versao de Produção do código em uma pasta dist
+1 - npm run build  
+
+Nota: (faz o git criar uma versao de produção em uma pasta ==> dist )
+
+-----------------------------------------------------------------------
+
+git Criar conta no guit e no github
+
+-----------------------------------------------------------------------
+
+Criar configurações globais:
 
 git config --global user.name "conforme criado no github"
 git config --global user.name "nome@servidor.com"
 git config --global core.autocrlf true
 
-criar .gitattributes na raiz do projeto
+-----------------------------------------------------------------------------
 
+criar .gitattributes na raiz do projeto
 .gitattributes >> # Para arquivos de texto, converte CRLF para LF no commit 
  * text=auto
 
-----------------------------
+-----------------------------------------------------------------------------
 
-1 - npm run build  (faz o git criar uma versao de produção em uma pasta ==> dist )
+criar repositorio no github
+
+echo "# Magazine" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/BorisMagaievski/Magazine.git
+git push -u origin main
+
+----------------------------------------------------------------------------
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/BorisMagaievski/Magazine.git
+git branch -M main
+git push -u origin main
+
+-----------------------------------------------------------------------------
+Publicar a página no guithub pages (CAMINHO)
+
+1 - No repositório do projeto no servidor guithub clique em setings
+2 - Procure a opção pages
+3 - Cliquw no botão github actions
+4 - Clique no atalho create your own
+5 - substitua o código gerado pelo conteúdo do arquivo githubpages.text
+6 - salve com o nome main.yml
+
+NOTA : Para usar este recurso de forma gratuita o projeto deve ser público
