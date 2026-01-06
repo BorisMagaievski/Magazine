@@ -1,0 +1,17 @@
+BAM - Ctba 06/01/2025
+----------------
+Criar conta
+criar repositorio no github
+
+git config --global user.name "conforme criado no github"
+git config --global user.name "nome@servidor.com"
+git config --global core.autocrlf true
+
+criar .gitattributes na raiz do projeto
+
+.gitattributes >> # Para arquivos de texto, converte CRLF para LF no commit 
+ * text=auto
+
+----------------------------
+
+1 - npm run build  (faz o git criar uma versao de produção em uma pasta ==> dist )

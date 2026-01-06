@@ -1,0 +1,2 @@
+# Para arquivos de texto, converte CRLF para LF no commit
+* text=auto
